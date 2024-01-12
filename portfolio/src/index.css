@@ -32,6 +32,18 @@
   --border-radius: 20px;
 }
 
+/* Responsive typography */
+@media screen and (max-width: 1024px){
+  :root{
+    --h1-font-size: 36px;
+    --h2-font-size: 24px;
+    --h3-font-size: 20px;
+    --normal-font-size: 16px;
+    --small-font-size: 12px;
+    --smaller-font-size: 10px;
+  }
+}
+
 /* Base */
 
 *{
@@ -112,7 +124,7 @@ img {
 
 .section_title::before {
   content: '';
-  background:none;
+  background:url(./assets/dots-bg.svg);
   height: 36px;
   width: 36px;
   position: absolute;
