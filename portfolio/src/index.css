@@ -8,7 +8,7 @@
   --first-color: hsl(289, 82%, 49%);
   --title-color: hsl(278, 5%, 30%);
   --text-color: hsl(289, 44%, 5%);
-  --body-color: hsl(290, 44%, 89%);
+  --body-color: hsl(0, 0%, 100%);
   --container-color: #fff;
 
   /* Font and Typography */
