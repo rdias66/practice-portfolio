@@ -9,16 +9,14 @@ const About = () => {
 
       <div className="about__container grid">
         <img src={MyAvatar_About} alt="" className="about__img" />
-      </div>
-
-      <div className="about__data grid">
-        <div className="about__info">
-          <p className="about__description">SET VARIABLE HERE FROM A STATIONARY DATA FILE IMPORTED ON TOP </p>
-          <a href="#about" className="btn">Download CV</a>
-        </div>
-      </div>
-
-      <div className="about__skills grid">
+      
+        <div className="about__data grid">
+          <div className="about__info">
+            <p className="about__description">SET VARIABLE HERE FROM A STATIONARY DATA FILE IMPORTED ON TOP </p>
+            <a href="#about" className="btn">Download CV</a>
+          </div>
+      
+          <div className="about__skills grid">
 
         <div className="skills__data"> 
           <div className="skills__titles">
@@ -27,35 +25,36 @@ const About = () => {
           </div>
 
           <div className="skills__bar">
-            <span className="skills__percentage"></span>
+            <span className="skills__percentage development"></span>
           </div>
         </div>
 
         <div className="skills__data">
           <div className="skills__titles">
-            <h3 className="skills__name">UI/UX Design</h3>
+            <h3 className="skills__name">Deployment</h3>
             <span className="skills__number">10%</span>
           </div>
 
           <div className="skills__bar">
-            <span className="skills__percentage"></span>
+            <span className="skills__percentage deployment"></span>
           </div>
         </div>
 
         <div className="skills__data">
           <div className="skills__titles">
-            <h3 className="skills__name">Force of will</h3>
-            <span className="skills__number">.5%</span>
+            <h3 className="skills__name">English</h3>
+            <span className="skills__number">100%</span>
           </div>
 
           <div className="skills__bar">
-            <span className="skills__percentage"></span>
+            <span className="skills__percentage english"></span>
           </div>
         </div>
 
 
+          </div>
+        </div>
       </div>
-
     </section>
   )
 }
