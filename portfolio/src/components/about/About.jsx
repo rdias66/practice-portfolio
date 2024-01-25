@@ -1,6 +1,8 @@
 import React from 'react'
 import "./about.css"
 import MyAvatar_About from "../../assets/avatar-2.svg"
+import AboutBox from "./AboutBox"
+import {AboutMe} from './AboutData'
 
 const About = () => {
   return (
@@ -12,7 +14,7 @@ const About = () => {
       
         <div className="about__data grid">
           <div className="about__info">
-            <p className="about__description">SET VARIABLE HERE FROM A STATIONARY DATA FILE IMPORTED ON TOP </p>
+            <p className="about__description">{AboutMe}</p>
             <a href="#about" className="btn">Download CV</a>
           </div>
       
@@ -55,6 +57,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <AboutBox />
     </section>
   )
 }
