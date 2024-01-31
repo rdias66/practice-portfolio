@@ -2,7 +2,7 @@ import React from 'react'
 import "./about.css"
 import MyAvatar_About from "../../assets/avatar-2.svg"
 import AboutBox from "./AboutBox"
-import {AboutMe} from './AboutData'
+import Data from './Data'
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
       
         <div className="about__data grid">
           <div className="about__info">
-            <p className="about__description">{AboutMe}</p>
+            <p className="about__description">{Data[0].aboutEN}</p>
             <a href="#about" className="btn">Download CV</a>
           </div>
       
