@@ -1,6 +1,6 @@
 import React from 'react'
 import "./about.css"
-import MyAvatar_About from "../../assets/avatar-2.svg"
+import MyAvatar_About from "../../assets/avatar-2.png"
 import AboutBox from "./AboutBox"
 import Data from './Data'
 

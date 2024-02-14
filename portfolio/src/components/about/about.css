@@ -99,3 +99,6 @@
     font-size: 1.875rem;
 }
 
+.about__img {
+    border-radius: 50%;
+}

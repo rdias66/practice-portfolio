@@ -18,6 +18,7 @@
 
 .home__img {
     margin-bottom: 1.5rem;
+    border-radius: 50%;
 }
 
 .home__name {

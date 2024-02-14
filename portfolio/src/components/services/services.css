@@ -3,6 +3,11 @@
     column-gap: 1.875rem;
 }
 
+.section__subtitle {
+    margin-bottom: 1.875rem;
+    text-align: center;
+}
+
 
 .services__card {
     text-align: center;
