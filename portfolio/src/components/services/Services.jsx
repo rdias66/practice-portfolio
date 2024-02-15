@@ -1,102 +1,113 @@
 import React from 'react'
 import "./services.css"
-import Image2 from "../../assets/service-1.svg"
-import Image1 from "../../assets/service-2.svg"
-import Image3 from "../../assets/service-3.svg"
-import Image4 from "../../assets/service-3.svg" 
-import Image5 from "../../assets/service-1.svg"
-import Image6 from "../../assets/service-1.svg"
-import Image7 from "../../assets/service-1.svg"
-import Image8 from "../../assets/service-1.svg"
-import Image9 from "../../assets/service-1.svg"
-import Image10 from "../../assets/service-1.svg"
-import Image11 from "../../assets/service-1.svg"
+import IconNode from "../../assets/icon-node.png"
+import IconPrisma from "../../assets/icon-prisma.png"
+import IconGo from "../../assets/icon-go.png"
+import IconDocker from "../../assets/icon-docker.png" 
+import IconHTML from "../../assets/icon-html.png"
+import IconCSS from "../../assets/icon-css.png"
+import IconReact from "../../assets/icon-react.png"
+import IconUIUX from "../../assets/icon-ui.png"
+import IconEN from "../../assets/icon-en.png"
+import IconGoogle from "../../assets/icon-google.png"
+import IconComm from "../../assets/icon-comm.png"
 
 
 
 const backendData = [
   {
     id: 1,
-    image: Image1,
-    title: "Node.js",
+    image: IconNode,
+    title: "Node",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 8,
   },
   {
     id: 2,
-    image: Image2,
+    image: IconPrisma,
     title: "Prisma",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 7,
   },
   {
     id: 3,
-    image: Image3, 
+    image: IconGo, 
     title: "Golang",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 5,
   },
   {
     id: 4,
-    image: Image4, 
+    image: IconDocker, 
     title: "Docker",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 6,
   },
 ];
 
 const frontendData = [
   {
     id: 1,
-    image: Image5,
+    image: IconHTML,
     title: "HTML",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 6,
   },
   {
     id: 2,
-    image: Image6,
+    image: IconCSS,
     title: "CSS",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 5,
   },
   {
     id: 3,
-    image: Image7, 
-    title: "React.js",
+    image: IconReact, 
+    title: "React",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 7,
   },
   {
     id: 4,
-    image: Image8, 
-    title: "UI/UX",
+    image: IconUIUX, 
+    title: "UIUX",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 4,
   },
 ];
 
 const generalData = [
   {
     id: 1,
-    image: Image9,
+    image: IconEN,
     title: "English",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 9,
   },
   {
     id: 2,
-    image: Image10,
+    image: IconGoogle,
     title: "Googling",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      level: 10,
   },
   {
     id: 3,
-    image: Image11, 
-    title: "Communication skills",
+    image: IconComm, 
+    title: "Communication",
     description:
       "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+    level: 10,
   },
 ];
 
@@ -106,14 +117,22 @@ const Services = () => {
     <div className="backend__section">
     <h3 className="section__subtitle">Back-end proficiencies</h3>
     <div className="services__container grid">
-      {backendData.map(({id, image, title, description}) => {
+      {backendData.map(({id, image, title, description, level}) => {
+        const customClassName = `services__card ${title.toLowerCase().replace(/\s/g, '-')}`;
         return (
-          <div className="services__card" key={id}>
+          <div className={customClassName} key={id}>
               <img src={image} alt="" className="services__img" />
 
               <h3 className="services__title">{title}</h3>
 
               <p className="services__description">{description}</p>
+
+              <div className="star-container">
+           
+                 {[...Array(10)].map((_, index) => (
+                    <span key={index} className={`star ${index < level ? 'filled' : ''}`}>&#9733;</span>
+                 ))}
+              </div>
           </div>
         )
       })}
@@ -123,14 +142,22 @@ const Services = () => {
     <div className="frontend__section">
     <h3 className="section__subtitle">Front-end proficiencies</h3>
     <div className="services__container grid">
-      {frontendData.map(({id, image, title, description}) => {
+    {frontendData.map(({id, image, title, description, level}) => {
+        const customClassName = `services__card ${title.toLowerCase().replace(/\s/g, '-')}`;
         return (
-          <div className="services__card" key={id}>
+          <div className={customClassName} key={id}>
               <img src={image} alt="" className="services__img" />
 
               <h3 className="services__title">{title}</h3>
 
               <p className="services__description">{description}</p>
+
+              <div className="star-container">
+           
+                 {[...Array(10)].map((_, index) => (
+                    <span key={index} className={`star ${index < level ? 'filled' : ''}`}>&#9733;</span>
+                 ))}
+              </div>
           </div>
         )
       })}
@@ -140,14 +167,22 @@ const Services = () => {
     <div className="general__section">
     <h3 className="section__subtitle">General proficiencies</h3>
     <div className="services__container grid">
-      {generalData.map(({id, image, title, description}) => {
+    {generalData.map(({id, image, title, description, level}) => {
+        const customClassName = `services__card ${title.toLowerCase().replace(/\s/g, '-')}`;
         return (
-          <div className="services__card" key={id}>
+          <div className={customClassName} key={id}>
               <img src={image} alt="" className="services__img" />
 
               <h3 className="services__title">{title}</h3>
 
               <p className="services__description">{description}</p>
+
+              <div className="star-container">
+           
+                 {[...Array(10)].map((_, index) => (
+                    <span key={index} className={`star ${index < level ? 'filled' : ''}`}>&#9733;</span>
+                 ))}
+              </div>
           </div>
         )
       })}
