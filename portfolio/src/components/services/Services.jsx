@@ -20,7 +20,7 @@ const backendData = [
     image: IconNode,
     title: "Node",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Web application development and maintenance with containerization and integration for databases and other services.",
     level: 8,
   },
   {
@@ -28,7 +28,7 @@ const backendData = [
     image: IconPrisma,
     title: "Prisma",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Experience in creating CRUD applications and dynamic development for direct problem-solving and specific rule-focused scenarios.",
     level: 7,
   },
   {
@@ -36,7 +36,7 @@ const backendData = [
     image: IconGo, 
     title: "Golang",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Web application development and maintenance similar to the services provided in Node.",
     level: 5,
   },
   {
@@ -44,7 +44,7 @@ const backendData = [
     image: IconDocker, 
     title: "Docker",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Direct containerization for development, testing, and deployment.",
     level: 6,
   },
 ];
@@ -55,7 +55,7 @@ const frontendData = [
     image: IconHTML,
     title: "HTML",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Full understanding of advanced functionalities and utilities regarding HTML.",
     level: 6,
   },
   {
@@ -63,7 +63,7 @@ const frontendData = [
     image: IconCSS,
     title: "CSS",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Full understanding of intermediate functionalities and utilities regarding CSS.",
     level: 5,
   },
   {
@@ -71,7 +71,7 @@ const frontendData = [
     image: IconReact, 
     title: "React",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Experience creating responsive SPAs, MPAs, and general components with React.",
     level: 7,
   },
   {
@@ -79,7 +79,7 @@ const frontendData = [
     image: IconUIUX, 
     title: "UIUX",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Basic knowledge for dynamic and practical development.",
     level: 4,
   },
 ];
@@ -90,7 +90,7 @@ const generalData = [
     image: IconEN,
     title: "English",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Fluent English skills, both spoken and written, with professional experience using English in the work environment.",
     level: 9,
   },
   {
@@ -98,7 +98,7 @@ const generalData = [
     image: IconGoogle,
     title: "Googling",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Learning and researching any necessary and complementary topics regarding a subject. Always striving to learn independently, asking questions and seeking assistance only when absolutely necessary.",
       level: 10,
   },
   {
@@ -106,7 +106,7 @@ const generalData = [
     image: IconComm, 
     title: "Communication",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Communicative and outspoken, always ready to listen and understand the topics and culture of the team. Ready to follow as well as lead.",
     level: 10,
   },
 ];
