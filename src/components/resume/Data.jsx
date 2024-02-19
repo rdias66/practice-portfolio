@@ -13,7 +13,7 @@ const Data = [
       icon: "icon-graduation",
       year: "2019 - Locked on 2023",
       title: "Electrical engineering - UTFPR Ponta Grossa",
-      desc: "Bachelor's degree locked for career switch to my passion.",
+      desc: "Bachelor's degree locked for career switch.",
     },
     {
       id: 3,
@@ -45,7 +45,7 @@ const Data = [
       icon: "icon-briefcase",
       year: "1/2017 - 5/2017",
       title: "Assistant Teacher - Logic Minds Educação Tecnológica ",
-      desc: "Assistant teacher for classes regardind robotics, initial programming and tech in general for children ages 8 to 17",
+      desc: "Assistant teacher for classes regardind robotics, initial programming and tech in general for children ages 8 to 17.",
     },
 
   ];
