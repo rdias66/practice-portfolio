@@ -65,17 +65,17 @@
 }
 
 .development {
-    width: 90%;
+    width: 100%;
     background-color: rgb(255, 209, 92);
 }
 
 .deployment {
-    width: 90%;
+    width: 50%;
     background-color: rgb(58, 183, 195);
 }
 
 .english {
-    width: 90%;
+    width: 100%;
     background-color: rgb(195, 92, 255);
 }
 

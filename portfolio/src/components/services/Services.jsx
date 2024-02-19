@@ -21,7 +21,7 @@ const backendData = [
     title: "Node",
     description:
       "Web application development and maintenance with containerization and integration for databases and other services.",
-    level: 8,
+    level: 4,
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const backendData = [
     title: "Prisma",
     description:
       "Experience in creating CRUD applications and dynamic development for direct problem-solving and specific rule-focused scenarios.",
-    level: 7,
+    level: 4,
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const backendData = [
     title: "Golang",
     description:
       "Web application development and maintenance similar to the services provided in Node.",
-    level: 5,
+    level: 3,
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const backendData = [
     title: "Docker",
     description:
       "Direct containerization for development, testing, and deployment.",
-    level: 6,
+    level: 4,
   },
 ];
 
@@ -56,7 +56,7 @@ const frontendData = [
     title: "HTML",
     description:
       "Full understanding of advanced functionalities and utilities regarding HTML.",
-    level: 6,
+    level: 3,
   },
   {
     id: 2,
@@ -64,7 +64,7 @@ const frontendData = [
     title: "CSS",
     description:
       "Full understanding of intermediate functionalities and utilities regarding CSS.",
-    level: 5,
+    level: 3,
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ const frontendData = [
     title: "React",
     description:
       "Experience creating responsive SPAs, MPAs, and general components with React.",
-    level: 7,
+    level: 4,
   },
   {
     id: 4,
@@ -80,7 +80,7 @@ const frontendData = [
     title: "UIUX",
     description:
       "Basic knowledge for dynamic and practical development.",
-    level: 4,
+    level: 2,
   },
 ];
 
@@ -91,7 +91,7 @@ const generalData = [
     title: "English",
     description:
       "Fluent English skills, both spoken and written, with professional experience using English in the work environment.",
-    level: 9,
+    level: 5,
   },
   {
     id: 2,
@@ -99,7 +99,7 @@ const generalData = [
     title: "Googling",
     description:
       "Learning and researching any necessary and complementary topics regarding a subject. Always striving to learn independently, asking questions and seeking assistance only when absolutely necessary.",
-      level: 10,
+      level: 5,
   },
   {
     id: 3,
@@ -107,7 +107,7 @@ const generalData = [
     title: "Communication",
     description:
       "Communicative and outspoken, always ready to listen and understand the topics and culture of the team. Ready to follow as well as lead.",
-    level: 10,
+    level: 5,
   },
 ];
 
@@ -129,7 +129,7 @@ const Services = () => {
 
               <div className="star-container">
            
-                 {[...Array(10)].map((_, index) => (
+                 {[...Array(5)].map((_, index) => (
                     <span key={index} className={`star ${index < level ? 'filled' : ''}`}>&#9733;</span>
                  ))}
               </div>
@@ -154,7 +154,7 @@ const Services = () => {
 
               <div className="star-container">
            
-                 {[...Array(10)].map((_, index) => (
+                 {[...Array(5)].map((_, index) => (
                     <span key={index} className={`star ${index < level ? 'filled' : ''}`}>&#9733;</span>
                  ))}
               </div>
@@ -179,7 +179,7 @@ const Services = () => {
 
               <div className="star-container">
            
-                 {[...Array(10)].map((_, index) => (
+                 {[...Array(5)].map((_, index) => (
                     <span key={index} className={`star ${index < level ? 'filled' : ''}`}>&#9733;</span>
                  ))}
               </div>
