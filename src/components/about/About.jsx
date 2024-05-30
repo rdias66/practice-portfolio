@@ -14,7 +14,8 @@ const About = () => {
       
         <div className="about__data grid">
           <div className="about__info">
-            <p className="about__description">{Data[0].aboutEN}</p>
+            <a href="https://rdias-portfolio.vercel.app" target="_blank" >
+            <p className="about__description">This is my active portfolio now.</p> </a>
             <a href="../../assets/CV - Rodrigo Dias English Version.pdf" download="CV - Rodrigo Dias English Version.pdf" className="btn">Download CV</a>
           </div>
       
